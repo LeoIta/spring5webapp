@@ -12,7 +12,7 @@ public class Publisher {
     private  Long id;
 
     private String name;
-    private String AddressLine1;
+    private String addressLine1;
     private String city;
     private String state;
     private String zip;
@@ -33,7 +33,7 @@ public class Publisher {
 
     public Publisher(String name, String addressLine1, String city, String state, String zip) {
         this.name = name;
-        AddressLine1 = addressLine1;
+        addressLine1 = addressLine1;
         this.city = city;
         this.state = state;
         this.zip = zip;
@@ -56,11 +56,11 @@ public class Publisher {
     }
 
     public String getAddressLine1() {
-        return AddressLine1;
+        return addressLine1;
     }
 
     public void setAddressLine1(String addressLine1) {
-        AddressLine1 = addressLine1;
+        addressLine1 = addressLine1;
     }
 
     public String getCity() {
@@ -92,7 +92,7 @@ public class Publisher {
         return "Publisher{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", AddressLine1='" + AddressLine1 + '\'' +
+                ", AddressLine1='" + addressLine1 + '\'' +
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", zip='" + zip + '\'' +

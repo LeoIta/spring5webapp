@@ -16,7 +16,6 @@ public class BootStrapData implements CommandLineRunner {
     private final BookRepository bookRepository;
     private final PublisherRepository publisherRepository;
 
-
     public BootStrapData(AuthorRepository authorRepository, BookRepository bookRepository, PublisherRepository publisherRepository) {
         this.authorRepository = authorRepository;
         this.bookRepository = bookRepository;
@@ -57,7 +56,6 @@ public class BootStrapData implements CommandLineRunner {
         authorRepository.save(rod);
         bookRepository.save(noEJB);
         publisherRepository.save(publisher);
-
 
         System.out.println("Started in Bootstrap");
         System.out.println("Number of Publisher: " + publisherRepository.count());
